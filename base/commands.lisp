@@ -6,8 +6,9 @@
 
 ;; Shows current time
 (define-command-global current-time ()
-  "Show the current time."
-  (echo "~a" (local-time:now)))
+  "Show the current time and Unix epoch."
+  (let ((now (local-time:now)))
+    (echo "~a  (epoch: ~a)" now (local-time:timestamp-to-unix now))))
 
 (define-command-global show-weather ()
   "Show the weather for current location in message area."
