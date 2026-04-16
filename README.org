@@ -87,6 +87,8 @@ via =my-mode=, which is enabled by default on every =web-buffer=.
 | =C-x e=   | Edit a Nyxt user file in emacsclient    |
 | =C-x w=   | Show weather in the message area        |
 | =C-x t=   | Show current time in the message area   |
+| =C-x z=   | Reopen last buffer                      |
+| =C-x C-z= | Querry closed buffers to reopen         |
 
 * External editor (emacsclient)
 

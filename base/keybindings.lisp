@@ -11,7 +11,9 @@
   "C-0"         'delete-current-buffer
   "C-;"         'switch-buffer-last
   "C-e"         'edit-with-external-editor
-  "C-x e"       'edit-user-file-with-external-editor)
+  "C-x e"       'edit-user-file-with-external-editor
+  "C-x z"       'nyxt:reopen-last-buffer
+  "C-x C-z"     'nyxt:reopen-buffer)
 
 (define-mode my-mode
     nil
