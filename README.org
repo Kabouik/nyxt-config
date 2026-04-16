@@ -58,9 +58,6 @@ own setup, copy =theme/catppuccin.lisp= and add to your =config.lisp=:
 
 #+begin_src lisp
 (nyxt::load-lisp "~/.config/nyxt/theme/catppuccin.lisp")
-;; Pick a default flavour (Mocha shown here):
-(define-configuration browser
-  ((theme *catppuccin-mocha*)))
 #+end_src
 
 The flavour switcher command and the flavour-persistence file are self-contained
