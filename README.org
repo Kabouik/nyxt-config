@@ -15,13 +15,15 @@ My Nyxt 4 configuration, commands, rules, and Catppuccin theme.
 ├── theme/
 │   ├── catppuccin.lisp          # all four flavours + runtime switcher
 │   └── catppuccin-flavour.lisp  # auto-generated: stores the active flavour
-└── base/
-    ├── urlprompt.lisp           # search engines shortcuts
-    ├── domainrules.lisp         # old-reddit-mode (redirects reddit to old.reddit)
-    ├── commands.lisp            # custom commands + floating Emacsclient as external editor
-    ├── nyxt-sessions.lisp       # session save/restore (third-party)
-    ├── keybindings.lisp         # custom keymap
-    └── glyphs.lisp              # status bar mode glyphs
+├── base/
+│   ├── urlprompt.lisp           # search engines shortcuts
+│   ├── domainrules.lisp         # old-reddit-mode (redirects reddit to old.reddit)
+│   ├── commands.lisp            # custom commands + floating Emacsclient as external editor
+│   ├── nyxt-sessions.lisp       # session save/restore (third-party)
+│   ├── keybindings.lisp         # custom keymap
+│   └── glyphs.lisp              # status bar mode glyphs
+└── misc/
+    └── guix-fix.lisp            # temp workaround for Guix package bug (internal pages broken)
 #+end_src
 
 Load order in =config.lisp= matters: =keybindings.lisp= must come before
